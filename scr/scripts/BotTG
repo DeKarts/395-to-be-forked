@@ -1,0 +1,8 @@
+#!/bin/bash
+
+TOKEN="8162882900:AAEAtSTVoVIyqkYhTZPz3nvYhKDtD6mJjmo"
+ID="6243078053"
+echo "Введите сообщение:"
+read mes
+curl "https://api.telegram.org/bot$TOKEN/sendMessage?chat_id=$ID&text=$mes" --ssl-no-revoke
+echo "Сообщение отправлено."
